@@ -1,9 +1,11 @@
 package exercise_1;
 
+
 public class Circle {
-    private double radius = 1.0;
+    private double radius;
 
     public Circle() {
+        radius = 1;
     }
 
     public Circle(double radius) {
@@ -24,6 +26,20 @@ public class Circle {
 
     public double getCircumference() {
         return 2 * Math.PI * radius;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null) return false;
+        if (getClass() != o.getClass()) return false;
+        Circle circle = (Circle) o;
+        return Double.compare(circle.getRadius(), getRadius()) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Double.hashCode(getRadius());
     }
 
     @Override
