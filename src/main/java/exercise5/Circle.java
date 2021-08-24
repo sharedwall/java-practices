@@ -1,14 +1,19 @@
-package exercise_1;
+package exercise5;
 
+public class Circle extends Shape{
 
-public class Circle {
     private double radius;
 
     public Circle() {
-        radius = 1;
+        radius = 1.0;
     }
 
     public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public Circle(String color, boolean filled, double radius) {
+        super(color, filled);
         this.radius = radius;
     }
 
@@ -20,32 +25,22 @@ public class Circle {
         this.radius = radius;
     }
 
+    @Override
     public double getArea() {
         return Math.PI * radius * radius;
     }
 
-    public double getCircumference() {
+    @Override
+    public double getPerimeter() {
         return 2 * Math.PI * radius;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null) return false;
-        if (getClass() != o.getClass()) return false;
-        Circle circle = (Circle) o;
-        return Double.compare(circle.getRadius(), getRadius()) == 0;
-    }
-
-    @Override
-    public int hashCode() {
-        return Double.hashCode(getRadius());
     }
 
     @Override
     public String toString() {
         return "Circle{" +
                 "radius=" + radius +
+                ", color='" + color + '\'' +
+                ", filled=" + filled +
                 '}';
     }
 }

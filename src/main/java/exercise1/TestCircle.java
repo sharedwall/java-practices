@@ -1,4 +1,4 @@
-package exercise_1;
+package exercise1;
 
 public class TestCircle {
     public static void main(String[] args) {

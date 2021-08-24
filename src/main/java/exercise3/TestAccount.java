@@ -1,4 +1,4 @@
-package exercise_3;
+package exercise3;
 
 public class TestAccount {
     public static void main(String[] args) {

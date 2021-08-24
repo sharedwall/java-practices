@@ -1,4 +1,4 @@
-package exercise_2;
+package exercise2;
 
 public class TestAuthor {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class TestAuthor {
         System.out.println("Eamil is: " + author.getEmail());
         System.out.println("Gender is: " + author.getGender());
 
-        Book dummyBook = new Book("Java for me", author, 19.95, 99);  // Test Book's Constructor
-        System.out.println(dummyBook);  // Test Book's toString()
+        Book javaBook = new Book("Java for me", author, 19.95, 99);  // Test Book's Constructor
+        System.out.println(javaBook);
     }
 }
