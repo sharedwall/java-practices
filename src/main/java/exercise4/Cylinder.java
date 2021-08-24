@@ -5,17 +5,16 @@ import java.util.Objects;
 public class Cylinder extends Circle {
     private double height;
 
-    public Cylinder() {
-        height = 1.0;
+    public Cylinder(String color) {
+        super(color);
     }
 
-    public Cylinder(double radius) {
-        super(radius);
-        height = 1.0;
+    public Cylinder(String color, double radius) {
+        super(color, radius);
     }
 
-    public Cylinder(double radius, double height) {
-        super(radius);
+    public Cylinder(String color, double radius, double height) {
+        super(color, radius);
         this.height = height;
     }
 

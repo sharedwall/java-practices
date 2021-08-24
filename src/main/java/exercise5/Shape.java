@@ -6,9 +6,8 @@ public abstract class Shape {
     protected String color;
     protected boolean filled;
 
-    public Shape() {
-        color = "Black";
-        filled = false;
+    public Shape(String color) {
+        this.color = color;
     }
 
     public Shape(String color, boolean filled) {

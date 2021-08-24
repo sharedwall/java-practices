@@ -5,7 +5,6 @@ public class Circle {
     private double radius;
 
     public Circle() {
-        radius = 1;
     }
 
     public Circle(double radius) {

@@ -7,12 +7,12 @@ public class Rectangle extends Shape {
     private double length;
     private double width;
 
-    public Rectangle() {
-        length = 1.0;
-        width = 1.0;
+    public Rectangle(String color) {
+        super(color);
     }
 
-    public Rectangle(double length, double width) {
+    public Rectangle(String color, double length, double width) {
+        super(color);
         this.length = length;
         this.width = width;
     }

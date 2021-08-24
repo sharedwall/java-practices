@@ -1,11 +1,12 @@
 package exercise5;
 
 public class Square extends Rectangle {
-    public Square() {
+    public Square(String color) {
+        super(color);
     }
 
-    public Square(double width) {
-        super(width, width);
+    public Square(String color, double width) {
+        super(color, width, width);
     }
 
     public Square(String color, boolean filled, double width) {
