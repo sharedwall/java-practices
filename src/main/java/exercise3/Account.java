@@ -3,8 +3,8 @@ package exercise3;
 import java.util.Objects;
 
 public class Account {
-    private int id;
-    private Customer customer;
+    private final int id;
+    private final Customer customer;
     private double balance;
 
     public Account(int id, Customer customer, double balance) {

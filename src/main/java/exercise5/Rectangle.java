@@ -1,5 +1,7 @@
 package exercise5;
 
+import java.util.Objects;
+
 public class Rectangle extends Shape {
 
     private double length;
@@ -46,6 +48,20 @@ public class Rectangle extends Shape {
     @Override
     public double getPerimeter() {
         return (length + width) * 2;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Rectangle)) return false;
+        if (!super.equals(o)) return false;
+        Rectangle rectangle = (Rectangle) o;
+        return Double.compare(rectangle.getLength(), getLength()) == 0 && Double.compare(rectangle.getWidth(), getWidth()) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), getLength(), getWidth());
     }
 
     @Override

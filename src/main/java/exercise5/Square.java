@@ -1,6 +1,6 @@
 package exercise5;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle {
     public Square() {
     }
 
@@ -16,7 +16,7 @@ public class Square extends Rectangle{
         return super.getWidth();
     }
 
-    public void setSide(double width){
+    public void setSide(double width) {
         setLength(width);
         setWidth(width);
     }
@@ -33,10 +33,11 @@ public class Square extends Rectangle{
         super.setLength(length);
     }
 
+
     @Override
     public String toString() {
         return "Square{" +
-                super.toString()+
+                super.toString() +
                 "}";
     }
 }
