@@ -1,4 +1,4 @@
-package exercise3;
+package sprint1.exercise3;
 
 public class TestAccount {
     public static void main(String[] args) {

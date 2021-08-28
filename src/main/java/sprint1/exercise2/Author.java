@@ -1,4 +1,4 @@
-package exercise2;
+package sprint1.exercise2;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package exercise5;
+package sprint1.exercise5;
 
 public class Square extends Rectangle {
     public Square(String color) {
