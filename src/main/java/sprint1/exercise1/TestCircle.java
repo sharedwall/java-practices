@@ -1,4 +1,4 @@
-package exercise1;
+package sprint1.exercise1;
 
 public class TestCircle {
     public static void main(String[] args) {
