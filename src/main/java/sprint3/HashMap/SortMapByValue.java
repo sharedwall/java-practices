@@ -14,6 +14,5 @@ public class SortMapByValue {
         map.put("Reza", 8);
         map.put("Green", 22);
         System.out.println(map);
-
     }
 }
